@@ -8,7 +8,7 @@ import Alert from "../components/Alert";
 import { userContext } from "../context/AppProvider";
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import { IoChevronBack, IoClose } from "react-icons/io5";
-import { BsArrowLeft } from "react-icons/bs";
+
 
 function Login() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Login() {
   const [msg, setMsg] = useState({ type: "", content: "" });
   const [forgetPass, setForgetPass] = useState(false);
   const [forgetPassSuccess, setForgetPassSuccess] = useState(false);
-  const [loding, setLoding] = useState(true);
+  const [loding, setLoding] = useState(false);
   async function handleSubmit(e) {
     try {
       setLoding(true)

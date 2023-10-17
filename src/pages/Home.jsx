@@ -1,7 +1,7 @@
 import React from "react";
 import {FaFacebookF, FaInstagram, FaGithub} from "react-icons/fa"
 import {BsDoorClosed} from "react-icons/bs"
-import "./home.css";
+import "../css/home.css";
 import { Link } from "react-router-dom";
 export default function Home() {
 

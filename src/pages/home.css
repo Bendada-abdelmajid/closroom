@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+header{
+
+  padding: 20px 5vw 100px;
+  background: linear-gradient(to bottom, var(--darck) , transparent);
+}
+header .links {
+  display: flex;
+
+  align-items: center;
+  gap: 15px;
+}
+header .links .icon {
+  border-radius: 50%;
+  font-size: 20px;
+  border: 1px solid;
+  padding: 7px;
+  transition: background-color 0.3s ease;
+}
+header .links .icon:hover {
+  background-color: var(--light-gray);
+  color: var(--darkcyan);
+}
+
+.logo {
+    font-size: 16px;
+    gap: 5px;
+    letter-spacing: -0.6px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .logo img {
+  width: 30px;}
+  .logo span {
+    font-size: 30px;
+    font-family: 'Monoton', cursive;
+    background: linear-gradient(
+      135deg,
+      transparent 7px,
+      var(--tomato) 7px,
+      #ecbd2c 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero {
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+    padding: 0 5vw;
+  }
+ 
+
+  .hero .hero-img{
+    background-image: url("/public/hero.png");
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+    background-size: 500px;
+    opacity: 0.2;
+    background-position: center;
+  }
+  .hero .content {
+    max-width: fit-content;
+    text-align: center;
+  }
+  .hero .content h5{
+    line-height: 0.9;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  
+  }
+  .hero .content h5.last{
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: var(--tomato);
+   
+   
+    transform-origin: left;
+   
+  }
+  .hero .content p {
+    margin: 20px auto 0;
+    font-size: 20px;
+    max-width: 550px;
+  }
+  .hero .content .img {
+    position: absolute;
+    top: -96px;
+    right: -172px;
+  }
+  
+  .main-btn {
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 15px 55px;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition:  background-position 0.3s ease;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    background: linear-gradient( 135deg, var(--tomato) 7px, #ecbd2c 100% );
+background-position: 0 0;
+background-size: 150% 150%;
+  }
+  .main-btn:hover {
+  
+    background-position: 100% 50%;
+  }
+
+
+  @media (max-width:1100px) {
+   
+    .hero .content h5{
+     
+      font-size: 5rem;
+    
+    
+    }
+    .hero .content h5.last{
+      font-size: 5.3rem;
+     
+    }
+    .hero .content p {
+     
+      max-width: 100%;
+    }
+    
+  }
+  @media (max-width:950px ) {
+    
+    .hero .content h5{
+     
+      font-size: 10vw;
+    
+    
+    }
+    .hero .content h5.last{
+      font-size: 10vw;
+      margin-bottom: 30px;
+     
+    }
+    
+    .hero .content p {
+      font-size:4.8vw ;
+    }
+   
+  }
+  

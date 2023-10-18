@@ -18,9 +18,9 @@ export default function Users() {
         console.log(res)
         setUsers(res.data.users);
       }
-      return () => {
+     
         fetchdata()
-      }
+      
     },[q])
     
     function search(){

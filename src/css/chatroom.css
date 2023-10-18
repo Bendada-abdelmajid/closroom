@@ -250,6 +250,9 @@ text-align: center;
   cursor: pointer;}
   .joingroup .main-btn:hover{
   opacity: 0.9;}
+  .rome-cont {
+  z-index: 40000;}
+.footer,
 .rome-cont {
   display: grid;
   grid-template-columns: 1fr 0px;
@@ -259,6 +262,7 @@ text-align: center;
 
   height: calc(100dvh - 60px);
 }
+.showDetail .footer,
 .showDetail .rome-cont {
   grid-template-columns: 1fr var(--side-w);
 }
@@ -953,9 +957,10 @@ color: #667781;
   .showDetail {
     --side-w: 400px;
   }
+  .showDetail .footer,
   .showDetail .rome-cont {
     grid-template-columns: 1fr;
-    z-index: 20000;
+
   }
   .showDetail .rome-cont .group-detail {
     right: 0;

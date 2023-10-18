@@ -69,7 +69,7 @@ export default function MessageForm({ id, isRoom, show }) {
   };
 
   return (
-    <div className={`footer rome-cont ${show}`}>
+    <div className={`footer  ${show}`}>
       <div>
        <div className="emoji-picker">
        {/* <EmojiPicker width="100%" onEmojiClick={onEmojiClick} previewConfig={{showPreview:false}} lazyLoadEmojis={true} skinTonesDisabled={true} />  */}

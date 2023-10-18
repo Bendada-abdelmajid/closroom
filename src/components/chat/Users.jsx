@@ -28,7 +28,7 @@ export default function Users() {
         if(value.length > 0) {
         setQ(value)
         } else {
-            setQ("myGroups")
+            setQ("friends")
         }
         
       }

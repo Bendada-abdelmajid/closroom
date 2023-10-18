@@ -54,7 +54,10 @@ export default function ChatRoom() {
       channel.unsubscribe();
     };
   }, [allmessages]);
- 
+  function closeRoom() {
+    setRoom(null);
+    setGroupData(null);
+  }
   return (
     <chatContext.Provider
       value={{
@@ -68,9 +71,10 @@ export default function ChatRoom() {
         setMessages,
         groups,
         setGroups,
+        closeRoom,
       }}
     >
-      <div className={`body-container `}>
+      <div className={`body-container ${activeRoom ? "scroll" : ""}`}>
         <SideBar />
         <div>
           {room ? (

@@ -3,10 +3,11 @@
 }
 
 .body-container {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: var(--side-w) calc(100vw - var(--side-w));
   background-color: var(--darcker);
+  overflow: hidden;
 }
 
 .side-bar {

@@ -5,14 +5,14 @@ import Audio from "./Audio";
 import { AiTwotoneFileText } from "react-icons/ai";
 import { chatContext, userContext } from '../../context/AppProvider';
 
-export default function Room({setNull}) {
+export default function Room() {
 const { user } = useContext(userContext);
-const { room, allmessages} = useContext(chatContext);
+const { room, allmessages, closeRoom} = useContext(chatContext);
   return (
     <div className="rome">
       <div className="header ">
         <div className="rome-title user f-start">
-          <div className="back-btn icone" onClick={setNull}>
+          <div className="back-btn icone" onClick={closeRoom}>
             <FaLongArrowAltLeft />
           </div>
           <div className="s-img center">

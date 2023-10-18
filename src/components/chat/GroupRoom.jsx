@@ -15,9 +15,9 @@ import { FiChevronDown } from "react-icons/fi";
 import DeleteBox from "./DeleteBox";
 
 
-export default function GroupRoom({  setNull }) {
+export default function GroupRoom() {
   const { user , setMsg, api} = useContext(userContext);
-  const { groupData, allmessages, setGroupData} = useContext(chatContext);
+  const { groupData, allmessages, setGroupData, closeRoom} = useContext(chatContext);
   const [isParticipant, setIsParticipant] = useState(groupData.isParticipant);
   const [smedai, setSmedai] = useState(false);
   const [audioSrc, setAudioSrc]= useState(null)
@@ -85,16 +85,18 @@ export default function GroupRoom({  setNull }) {
           <h3 className="name">{group.title}</h3>
           <h4> by {creater.username}</h4>
           <p>{group.description}</p>
-          <button className="main-btn" onClick={join}>
-            Join now
-          </button>
+          <div className="center" style={{gap:"15px"}}>
+          <button className="main-btn" onClick={join}>Join now </button>
+          <div className="back-btn icon" onClick={closeRoom}> cancel</div>
+          </div>
+          
         </div>
       ) : (
         <div className="rome-cont">
           <div className="rome">
             <div className="header space-b">
               <div className="rome-title user f-start">
-                <div className="back-btn icon" onClick={setNull}>
+                <div className="back-btn icon" onClick={closeRoom}>
                   <FaLongArrowAltLeft />{" "}
                 </div>
                 <div className="s-img center" onClick={showDetail}>

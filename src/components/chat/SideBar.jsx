@@ -39,9 +39,9 @@ export default function SideBar() {
       </div>
       <div className="romes">
       <ul className="open-rooms nav center" >
-       <li  className="nav-link active" onClick={()=>setSwip("0")}>Friends</li>
+       <li  className={`nav-link ${swip =="0" ? "active":""}`} onClick={()=>setSwip("0")}>Friends</li>
        <li className="border"></li>
-       <li  className="nav-link" onClick={()=>setSwip("-100%")}>Romes</li>
+       <li  className={`nav-link ${swip =="-100%" ? "active":""}`} onClick={()=>setSwip("-100%")}>Romes</li>
       </ul>
       <div className="slide" style={{transform:`translateX(${swip})`}}>
     

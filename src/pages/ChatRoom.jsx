@@ -34,6 +34,7 @@ export default function ChatRoom() {
         updateMessageCount(sender._id);
       } else if (message.fromFriend && !document.getElementById(sender._id)) {
         setUsers([...users, sender]);
+        updateMessageCount(sender._id);
       } else if (!message.fromFriend && document.getElementById(roomId)) {
         updateMessageCount(roomId);
       }

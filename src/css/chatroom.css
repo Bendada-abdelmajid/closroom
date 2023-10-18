@@ -1,13 +1,16 @@
 :root {
   --side-w: 400px;
 }
-
-.body-container {
+#root {
   width: 100vw;
+  overflow: hidden;
+}
+.body-container {
+  width: 100%;
   display: grid;
   grid-template-columns: var(--side-w) calc(100vw - var(--side-w));
   background-color: var(--darcker);
-  overflow: hidden;
+ 
 }
 
 .side-bar {

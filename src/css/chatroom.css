@@ -255,7 +255,7 @@ text-align: center;
   grid-template-columns: 1fr 0px;
   transition: 0.3s ease;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   height: calc(100dvh - 60px);
 }
@@ -961,7 +961,7 @@ color: #667781;
     right: 0;
   }
   .group-detail {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     width: 100%;

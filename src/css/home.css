@@ -48,7 +48,7 @@ header .links .icon:hover {
   }
 
   .hero {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100dvh - 200px);
     position: relative;
     z-index: 2;
     padding: 0 5vw;

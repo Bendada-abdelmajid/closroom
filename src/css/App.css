@@ -156,7 +156,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 30000;
   background-color: rgba(0, 0, 0, 0.49);
   backdrop-filter: blur(3px);
@@ -224,7 +224,7 @@ opacity: 1;}
 
   
 .loding-cont {
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
   width: 100%;
 }
 .loding{
@@ -276,7 +276,7 @@ padding: 20px;}
 
   padding: 20px 0;
 width: 100%;
-min-height: calc(100vh - 75px);
+min-height: calc(100dvh - 75px);
 overflow: hidden;
   overflow: hidden;
 }
@@ -427,7 +427,7 @@ background-color: var(--darck);
 
 .success_cont {
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -497,7 +497,7 @@ background-color: var(--darck);
 @keyframes s4 {to{transform: rotate(1turn)}}
 .page-not-found {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   flex-direction: column;
 
 }

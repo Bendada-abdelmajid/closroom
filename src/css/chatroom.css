@@ -987,7 +987,7 @@ color: #667781;
     transition: 0.3s ease;
   }
   .body-container.scroll {
-    transform: translateX(-100%);
+    margin-left: -100%;
   }
   .back-btn {
     display: flex !important;

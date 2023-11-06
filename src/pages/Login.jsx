@@ -37,9 +37,9 @@ function Login() {
       console.log(res.data);
       if (data.user) {
         setUser(data.user);
-        setTimeout(() => {
+        
           navigate("/");
-        }, 1500);
+      
       }
       setLoding(false)
     } catch (error) {

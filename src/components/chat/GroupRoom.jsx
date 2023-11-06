@@ -30,7 +30,9 @@ export default function GroupRoom() {
   const creater = groupData.creater;
   const isAdmin = groupData.isAdmin;
   useEffect(()=> {
-    lastMsg.current.scrollIntoView({smooth:true})
+    if(lastMsg.current) {
+      lastMsg.current.scrollIntoView({smooth:true})
+    }
   }, [])
 
   
